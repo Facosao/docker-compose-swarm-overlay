@@ -1,0 +1,27 @@
+#version: "1.0"
+services:
+  spark-master:
+    image: raulcsouza/spark-master-hadoop
+    container_name: spark-master
+    hostname: spark-master
+    tty: true
+    volumes:
+      - ./user_data:/user_data
+    ports:
+      - "8088:8088" # WebUI ResourceManager
+      - "8080:8080" # WebUI Spark Master
+      - "9870:9870" # WebUI NameNode
+      - "8888:8888" # WebUI Jupyter
+      - "8042:8042" # NodeManager
+      - "0.0.0.0:4040:4040" # Spark
+      - "0.0.0.0:18080:18080"
+      - "8000:8000" # API para o microservico
+    networks:
+      cluster-net:
+        ipv4_address: 10.0.1.11
+    environment:
+      - "SPARK_LOCAL_IP=10.0.1.11"
+networks:
+  cluster-net:
+    driver: overlay
+    external: true
