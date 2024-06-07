@@ -7,7 +7,7 @@ As pastas swarm-manager, swarm-worker1 e swarm-worker2 representam a pasta clust
 
 * Este tutorial utiliza 3 máquinas virtuais chamadas swarm-manager, swarm-worker1 e swarm-worker2. As 3 máquinas devem conseguir se comunicar entre si.
 
-* Adicionar spark-worker-3 e spark-worker-4 ao arquivo workers da máquina que irá executar o spark-master
+* Adicionar spark-worker-3 e spark-worker-4 ao arquivo workers da máquina que irá executar o spark-master.
 
 * Criar um cluster do docker swarm através dos comandos:
 
