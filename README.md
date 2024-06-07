@@ -1,7 +1,7 @@
 # docker-compose-swarm-overlay
 Utilizando o Docker Compose em várias engines do Docker através da rede overlay do Swarm.
 
-As pastas swarm-manager, swarm-worker1 e swarm-worker2 representam a pasta cluster-hadoop de cada máquina virtual fixa.
+As pastas swarm-manager, swarm-worker1 e swarm-worker2 representam a pasta cluster-hadoop de cada máquina virtual.
 
 # Passo a passo para fazer o segundo desafio do lab 8
 
